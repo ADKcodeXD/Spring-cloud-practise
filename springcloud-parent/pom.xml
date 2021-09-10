@@ -16,6 +16,7 @@
         <module>springcloud_05_orders</module>
         <module>springcloud_06_category</module>
         <module>springcloud_07_product</module>
+        <module>springcloud_08_hystrix</module>
     </modules>
     <!--继承springboot父项目-->
     <parent>

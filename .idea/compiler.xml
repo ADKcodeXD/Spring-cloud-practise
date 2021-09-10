@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud_07_product" />
+        <module name="springcloud_05_orders" />
+        <module name="springcloud_01_eureka" />
+        <module name="springcloud_03_consulclient" />
+        <module name="springcloud_06_category" />
+        <module name="springcloud_04_users" />
+        <module name="springcloud_02_eurekaclient" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-parent" target="1.8" />
+      <module name="springcloud_01_eureka" target="1.8" />
+      <module name="springcloud_02_eurekaclient" target="1.8" />
+      <module name="springcloud_03_consulclient" target="1.8" />
+      <module name="springcloud_04_users" target="1.8" />
+      <module name="springcloud_05_orders" target="1.8" />
+      <module name="springcloud_06_category" target="1.8" />
+      <module name="springcloud_07_product" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-parent" options="-parameters" />
+      <module name="springcloud_01_eureka" options="-parameters" />
+      <module name="springcloud_02_eurekaclient" options="-parameters" />
+      <module name="springcloud_03_consulclient" options="-parameters" />
+      <module name="springcloud_04_users" options="-parameters" />
+      <module name="springcloud_05_orders" options="-parameters" />
+      <module name="springcloud_06_category" options="-parameters" />
+      <module name="springcloud_07_product" options="-parameters" />
+    </option>
+  </component>
+</project>

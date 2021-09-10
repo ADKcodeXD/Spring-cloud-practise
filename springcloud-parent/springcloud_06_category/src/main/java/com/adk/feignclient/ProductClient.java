@@ -4,6 +4,8 @@ import com.adk.entity.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * 调用商品服务的接口
  * 调用的服务不同，名字也相应不同
@@ -32,5 +34,14 @@ public interface ProductClient {
 
     @PostMapping("/test2")
     String test2(@RequestBody Product product);
+
+    @GetMapping("/test3")
+    public String test3(@RequestParam("ids") String[] ids);
+
+    @GetMapping("/product/{id}")
+    Product productid(@PathVariable("id") Integer id);
+
+    @GetMapping("/products")
+    List<Product> findByCategoryId(@RequestParam("categoryid")Integer categoryid);
 
 }
